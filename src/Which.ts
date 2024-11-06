@@ -1,5 +1,5 @@
-import { constants, existsSync } from "fs"
-import { access } from "fs/promises"
+import { constants, existsSync, access } from "fs"
+// import { access } from "fs/promises"
 import { basename, delimiter, isAbsolute, join } from "path"
 import { env } from "process"
 import { isWin32 } from "./IsWin32"
@@ -23,7 +23,13 @@ export async function which(binaryOrPath: string): Promise<Maybe<string>> {
 async function canRX(fullpath: string): Promise<boolean> {
   if (isWin32()) return existsSync(fullpath)
   try {
-    await access(fullpath, constants.R_OK | constants.X_OK)
+    await new Promise((res, rej) => {
+      try {
+        access(fullpath, constants.R_OK | constants.X_OK, (err) => (err == null ? res(null) : rej(err)))
+      } catch (err) {
+        rej(err)
+      }
+    })
     return true
   } catch {
     return false
