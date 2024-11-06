@@ -2,11 +2,11 @@
 import { Deferred, Log, setLogger } from "batch-cluster"
 import { expect, use } from "chai"
 import eql from "deep-eql"
-import { createHash, randomInt } from "node:crypto"
-import { createReadStream } from "node:fs"
-import { copyFile, mkdir } from "node:fs/promises"
-import { join } from "node:path"
-import { env } from "node:process"
+import { createHash, randomInt } from "crypto"
+import { createReadStream } from "fs"
+import { copyFile, mkdir } from "fs/promises"
+import { join } from "path"
+import { env } from "process"
 import { dirSync } from "tmp"
 import { compact } from "./Array"
 import { DateOrTime, toExifString } from "./DateTime"
@@ -170,7 +170,7 @@ use(function (chai, utils) {
     Assertion.prototype,
     "containSubset",
     function (this: any, exp: any, message?: string) {
-      const keys = Object.keys((exp ??= {}))
+      const keys = Object.keys((exp = exp?exp: {}))
       const act = pick(this._obj ?? {}, ...keys)
       const why = []
       for (const key of keys) {

@@ -1,5 +1,5 @@
 import * as bc from "batch-cluster"
-import { debuglog } from "node:util"
+import { debuglog } from "util"
 import { toBoolean } from "./Boolean"
 import { CapturedAtTagNames } from "./CapturedAtTagNames"
 import { DefaultExiftoolArgs } from "./DefaultExiftoolArgs"

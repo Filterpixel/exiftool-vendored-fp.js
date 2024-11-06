@@ -62,7 +62,7 @@ export class ExifTime {
   }
 
   toDateTime(): DateTime {
-    return (this.#dt ??= DateTime.fromObject(
+    return (this.#dt = this.#dt? this.#dt: DateTime.fromObject(
       {
         hour: this.hour,
         minute: this.minute,
@@ -91,7 +91,7 @@ export class ExifTime {
   }
 
   #shortZone() {
-    return (this.#z ??= zoneToShortOffset(this.zone))
+    return (this.#z = this.#z? this.#z: zoneToShortOffset(this.zone))
   }
 
   toString() {

@@ -1,4 +1,4 @@
-import path from "node:path"
+import path from "path"
 import { ExifToolTask, ExifToolTaskOptions } from "./ExifToolTask"
 import { Utf8FilenameCharsetArgs } from "./FilenameCharsetArgs"
 import { Maybe } from "./Maybe"

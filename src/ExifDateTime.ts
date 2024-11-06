@@ -264,7 +264,7 @@ export class ExifDateTime {
    * has an unset zone (as Luxon doesn't support "unset" timezones)
    */
   toDateTime(overrideZone?: Maybe<string>): DateTime {
-    return (this.#dt ??= DateTime.fromObject(
+    return (this.#dt = this.#dt? this.#dt: DateTime.fromObject(
       {
         year: this.year,
         month: this.month,

@@ -1,4 +1,4 @@
-import { randomInt } from "node:crypto"
+import { randomInt } from "crypto"
 import { MinuteMs } from "./DateTime"
 import { ExifDateTime } from "./ExifDateTime"
 import { omit } from "./Object"

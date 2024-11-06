@@ -1,4 +1,4 @@
-import path from "node:path"
+import path from "path"
 import { ExifDateTime } from "./ExifDateTime"
 import { ExifTool } from "./ExifTool"
 import { end, expect, testImg } from "./_chai.spec"

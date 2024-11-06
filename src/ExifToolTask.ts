@@ -50,7 +50,7 @@ export abstract class ExifToolTask<T> extends bc.Task<T> {
         } else if (/error|warning/i.test(line)) {
           this.errors.push(line)
           // new Error() will add a "Error: " prefix:
-          error ??= new Error(line.replace(/^error: /i, ""))
+          error = error? error: new Error(line.replace(/^error: /i, ""))
         }
       }
     }

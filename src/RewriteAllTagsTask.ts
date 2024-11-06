@@ -1,4 +1,4 @@
-import * as _path from "node:path"
+import * as _path from "path"
 import { compact } from "./Array"
 import { ExifToolTask, ExifToolTaskOptions } from "./ExifToolTask"
 import { Utf8FilenameCharsetArgs } from "./FilenameCharsetArgs"

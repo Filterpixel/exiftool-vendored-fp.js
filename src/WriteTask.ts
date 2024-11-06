@@ -1,5 +1,5 @@
 import { encode } from "he"
-import * as _path from "node:path"
+import * as _path from "path"
 import { isDateOrTime, toExifString } from "./DateTime"
 import { DefaultExifToolOptions } from "./DefaultExifToolOptions"
 import { errorsAndWarnings } from "./ErrorsAndWarnings"
@@ -138,18 +138,18 @@ export class WriteTask extends ExifToolTask<WriteTaskResult> {
       // ExifTool will also accept a number when writing GPSLatitudeRef,
       // positive for north latitudes or negative for south, or a string
       // containing N, North, S or South)
-      tags.GPSLatitudeRef ??= tags.GPSLatitude as any
+      tags.GPSLatitudeRef = tags.GPSLatitudeRef? tags.GPSLatitudeRef: tags.GPSLatitude as any
     } else if (tags.GPSLatitude === null) {
-      tags.GPSLatitudeRef ??= null
+      tags.GPSLatitudeRef = tags.GPSLatitudeRef? tags.GPSLatitudeRef: null
     }
 
     if (isNumber(tags.GPSLongitude)) {
       // ExifTool will also accept a number when writing this tag, positive
       // for east longitudes or negative for west, or a string containing E,
       // East, W or West
-      tags.GPSLongitudeRef ??= tags.GPSLongitude as any
+      tags.GPSLongitudeRef = tags.GPSLongitudeRef? tags.GPSLongitudeRef: tags.GPSLongitude as any
     } else if (tags.GPSLongitude === null) {
-      tags.GPSLongitudeRef ??= null
+      tags.GPSLongitudeRef = tags.GPSLongitudeRef? tags.GPSLongitudeRef: null
     }
 
     if (isNumber(tags.GPSLatitude) && isNumber(tags.GPSLongitude)) {
@@ -162,7 +162,7 @@ export class WriteTask extends ExifToolTask<WriteTaskResult> {
     if (isNumber(tags.GPSAltitude)) {
       // ExifTool will also accept number when writing this tag, with negative
       // numbers indicating below sea level
-      tags.GPSAltitudeRef ??= tags.GPSAltitude as any
+      tags.GPSAltitudeRef = tags.GPSAltitudeRef? tags.GPSAltitudeRef:  tags.GPSAltitude as any
     }
 
     for (const key of keys(tags)) {

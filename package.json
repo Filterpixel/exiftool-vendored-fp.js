@@ -1,5 +1,5 @@
 {
-  "name": "exiftool-vendored",
+  "name": "exiftool-vendored-fp",
   "version": "29.0.0",
   "description": "Efficient, cross-platform access to ExifTool",
   "main": "./dist/ExifTool.js",

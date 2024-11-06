@@ -1,4 +1,4 @@
-import path from "node:path"
+import path from "path"
 import { ExifToolTask, ExifToolTaskOptions } from "./ExifToolTask"
 import { Utf8FilenameCharsetArgs } from "./FilenameCharsetArgs"
 import { Maybe } from "./Maybe"
@@ -44,7 +44,7 @@ export class BinaryToBufferTask extends ExifToolTask<Buffer | Error> {
         }
       }
     } catch (caught) {
-      err ??= notBlank(data)
+      err = err?err: notBlank(data)
         ? new Error(data)
         : caught instanceof Error
           ? caught

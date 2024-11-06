@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs"
+import { existsSync } from "fs"
 import { parseCoordinates } from "./CoordinateParser"
 import { ExifDate } from "./ExifDate"
 import { ExifDateTime } from "./ExifDateTime"

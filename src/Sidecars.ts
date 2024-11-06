@@ -1,4 +1,4 @@
-import { parse } from "node:path"
+import { parse } from "path"
 
 export const SidecarExts = [".exif", ".exv", ".mie", ".xmp"]
 

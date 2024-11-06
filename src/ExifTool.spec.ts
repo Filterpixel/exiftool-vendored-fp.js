@@ -1,5 +1,5 @@
 import { BatchCluster } from "batch-cluster"
-import * as _path from "node:path"
+import * as _path from "path"
 import { BinaryField } from "./BinaryField"
 import { DefaultMaxProcs } from "./DefaultMaxProcs"
 import { ExifDate } from "./ExifDate"
