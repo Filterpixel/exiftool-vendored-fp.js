@@ -1,4 +1,4 @@
-import * as bc from "batch-cluster"
+import * as bc from "batch-cluster-fp"
 import * as _cp from "child_process"
 import * as _fs from "fs"
 import process from "process"

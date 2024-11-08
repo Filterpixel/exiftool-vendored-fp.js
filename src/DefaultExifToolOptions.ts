@@ -1,4 +1,4 @@
-import * as bc from "batch-cluster"
+import * as bc from "batch-cluster-fp"
 import { debuglog } from "util"
 import { toBoolean } from "./Boolean"
 import { CapturedAtTagNames } from "./CapturedAtTagNames"

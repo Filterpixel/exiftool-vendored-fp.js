@@ -1,4 +1,4 @@
-import * as bc from "batch-cluster"
+import * as bc from "batch-cluster-fp"
 import { ExifToolOptions } from "./ExifToolOptions"
 import { isWarning } from "./IsWarning"
 import { Maybe } from "./Maybe"

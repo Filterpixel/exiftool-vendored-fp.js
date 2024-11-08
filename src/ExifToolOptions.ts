@@ -1,4 +1,4 @@
-import * as bc from "batch-cluster"
+import * as bc from "batch-cluster-fp"
 import { geoTz } from "./GeoTz"
 import { Maybe } from "./Maybe"
 import { Tags } from "./Tags"

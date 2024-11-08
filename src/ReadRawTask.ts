@@ -1,4 +1,4 @@
-import { logger } from "batch-cluster"
+import { logger } from "batch-cluster-fp"
 import * as _path from "path"
 import { errorsAndWarnings } from "./ErrorsAndWarnings"
 import { ExifToolTask, ExifToolTaskOptions } from "./ExifToolTask"

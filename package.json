@@ -1,13 +1,9 @@
 {
   "name": "exiftool-vendored-fp",
-  "version": "29.0.0",
+  "version": "29.0.1",
   "description": "Efficient, cross-platform access to ExifTool",
   "main": "./dist/ExifTool.js",
   "types": "./dist/ExifTool.d.ts",
-  "homepage": "https://photostructure.github.io/exiftool-vendored.js/",
-  "bugs": {
-    "url": "https://github.com/photostructure/exiftool-vendored.js/issues"
-  },
   "scripts": {
     "u": "npm-check-updates --upgrade --install always",
     "clean": "rimraf lib dist coverage .nyc_output",
@@ -30,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/photostructure/exiftool-vendored.js.git"
+    "url": "https://github.com/Filterpixel/exiftool-vendored-fp.js"
   },
   "release-it": {
     "hooks": {
@@ -62,7 +58,7 @@
     "MakerNote",
     "Metadata"
   ],
-  "author": "Matthew McEachen <matthew-exiftoolvendored@photostructure.com>",
+  "author": "Pratyush Goel <pratyush@filterpixel.com>",
   "license": "MIT",
   "nyc": {
     "exclude": [
@@ -114,7 +110,7 @@
   "dependencies": {
     "@photostructure/tz-lookup": "^11.0.0",
     "@types/luxon": "^3.4.2",
-    "batch-cluster": "^13.0.0",
+    "batch-cluster-fp": "^13.0.2",
     "he": "^1.2.0",
     "luxon": "^3.5.0"
   },

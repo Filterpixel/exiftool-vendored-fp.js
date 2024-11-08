@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 require("source-map-support").install()
 
-import { BatchCluster, Log, logger, setLogger } from "batch-cluster"
+import { BatchCluster, Log, logger, setLogger } from "batch-cluster-fp"
 import globule from "globule"
 import fs from "fs"
 import os from "os"

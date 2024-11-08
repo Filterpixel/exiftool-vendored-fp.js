@@ -1,4 +1,4 @@
-import { Logger } from "batch-cluster"
+import { Logger } from "batch-cluster-fp"
 import * as _fs from "fs"
 import * as _path from "path"
 import { isWin32 } from "./IsWin32"
