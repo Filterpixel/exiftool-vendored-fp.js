@@ -5,6 +5,7 @@
   "main": "./dist/ExifTool.js",
   "types": "./dist/ExifTool.d.ts",
   "scripts": {
+    "deploy":"npm run compile && npm publish --access public",
     "u": "npm-check-updates --upgrade --install always",
     "clean": "rimraf lib dist coverage .nyc_output",
     "precompile": "npm run clean",
