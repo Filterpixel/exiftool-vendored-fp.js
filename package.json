@@ -1,6 +1,6 @@
 {
   "name": "exiftool-vendored-fp",
-  "version": "29.0.1",
+  "version": "29.0.2",
   "description": "Efficient, cross-platform access to ExifTool",
   "main": "./dist/ExifTool.js",
   "types": "./dist/ExifTool.d.ts",
@@ -110,7 +110,7 @@
   "dependencies": {
     "@photostructure/tz-lookup": "^11.0.0",
     "@types/luxon": "^3.4.2",
-    "batch-cluster-fp": "^13.0.2",
+    "batch-cluster-fp": "^13.0.3",
     "he": "^1.2.0",
     "luxon": "^3.5.0"
   },

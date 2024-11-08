@@ -1,4 +1,4 @@
-import { BatchCluster } from "batch-cluster"
+import { BatchCluster } from "batch-cluster-fp"
 import * as _path from "path"
 import { BinaryField } from "./BinaryField"
 import { DefaultMaxProcs } from "./DefaultMaxProcs"

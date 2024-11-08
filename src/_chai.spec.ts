@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-import { Deferred, Log, setLogger } from "batch-cluster"
+import { Deferred, Log, setLogger } from "batch-cluster-fp"
 import { expect, use } from "chai"
 import eql from "deep-eql"
 import { createHash, randomInt } from "crypto"
